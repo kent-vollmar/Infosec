@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Countries Search</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <script src="js/app.js"></script>
+  	<h1>Country Search Template</h1>
+
+	<form>  
+		<label for="countryname">Search by full country name:</label><br>
+		<input type="text" id="fullname" name="fullname"><br>
+		<input type="button" value="click" onclick="searchByFullName()"/>  
+	</form>  
+	<form>  
+		<label for="partialname">Search by partial country name (including native and cultural names):</label><br>
+		<input type="text" id="partialname" name="partialname"><br>
+		<input type="button" value="click" onclick="searchByPartialName()"/>  
+	</form>  
+	<form>  
+		<label for="alphacode">Search by country alpha code:</label><br>
+		<input type="text" id="alphacode" name="alphacode"><br>
+		<input type="button" value="click" onclick="searchByAlphaCode()"/>  
+	</form>  
+
+	</div>
+	
+	<div id="countrytable">
+	</div>
+
+
+	<div id="statisticsTable">
+	</div>
+
+  </body>
+</html>
